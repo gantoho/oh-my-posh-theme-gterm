@@ -25,7 +25,7 @@
           {
             "type": "go",
             "foreground": "#00add8",
-            "template": "Go"
+            "template": " Go"
           },
           {
             "type": "go",
