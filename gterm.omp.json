@@ -8,9 +8,10 @@
     "template": "-> "
   },
   "var": {
-    "logotype": "ganto@",
+    "logotype": "ganto",
     "background": "",
-    "color": "#fff"
+    "color": "#fff",
+    "computer": "Computer"
   },
   "blocks": [
     {
@@ -21,9 +22,9 @@
         {
           "type": "text",
           "style": "plain",
-          "template": "{{ .Var.logotype }}",
           "background": "{{ .Var.background }}",
-          "foreground": "{{ .Var.color }}"
+          "foreground": "{{ .Var.color }}",
+          "template": "{{ .Var.logotype }}@{{ .Var.computer }} "
         },
         {
           "background": "transparent",
