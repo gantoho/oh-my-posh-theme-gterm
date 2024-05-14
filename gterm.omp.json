@@ -8,6 +8,7 @@
     "template": "-> "
   },
   "var": {
+    "show": false,
     "logotype": "ganto",
     "background": "",
     "color": "#fff",
@@ -20,11 +21,9 @@
       "newline": true,
       "segments": [
         {
-          "type": "text",
-          "style": "plain",
-          "background": "{{ .Var.background }}",
-          "foreground": "{{ .Var.color }}",
-          "template": "{{ .Var.logotype }}@{{ .Var.computer }} "
+          "type": "session",
+          "style": "diamond",
+          "template": "{{ if .Var.show }}{{ .Var.logotype }}@{{ .Var.computer }}{{ else }}{{ .UserName }}@{{ .HostName }}{{ end }} "
         },
         {
           "background": "transparent",
@@ -47,7 +46,14 @@
           "style": "plain",
           "foreground": "#00add8",
           "template": "{{.Full}} "
-        },
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "filler": "",
+      "segments": [
         {
           "foreground": "#F3C267",
           "foreground_templates": [
@@ -65,14 +71,7 @@
           "style": "plain",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
-        }
-      ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "right",
-      "filler": "",
-      "segments": [
+        },
         {
           "type": "status",
           "style": "plain",
