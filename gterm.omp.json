@@ -84,7 +84,7 @@
           "foreground_templates": [
             "{{ if gt .Code 0 }}#E06C75{{ end }}"
           ],
-          "template": " x{{ reason .Code }}"
+          "template": "x{{ reason .Code }}"
         },
         {
           "type": "status",
