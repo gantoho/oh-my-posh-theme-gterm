@@ -8,6 +8,7 @@
     "template": "-> "
   },
   "var": {
+    "showAll": false,
     "show": false,
     "logotype": "ganto",
     "background": "",
@@ -23,7 +24,7 @@
         {
           "type": "session",
           "style": "diamond",
-          "template": "{{ if .Var.show }}{{ .Var.logotype }}@{{ .Var.computer }}{{ else }}{{ .UserName }}@{{ .HostName }}{{ end }} "
+          "template": "{{ if .Var.showAll }} {{ if .Var.show }}{{ .Var.logotype }}@{{ .Var.computer }}{{ else }}{{ .UserName }}@{{ .HostName }}{{ end }} {{ end }}"
         },
         {
           "background": "transparent",
