@@ -18,3 +18,9 @@ gterm是基于emodipt-extend主题进行的风格微调
 
 分支有提交记录，待推送  
 ![](./images/img_06.png)
+
+Rust项目Tag展示
+![](./images/img_rust.png)
+
+Golang项目Tag展示
+![](./images/img_go.png)

@@ -22,7 +22,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": "{{ if .Var.showAll }} {{ if .Var.showCustom }}{{ .Var.logotype }}@{{ .Var.computer }}{{ else }}{{ .UserName }}@{{ .HostName }}{{ end }} {{ end }}",
+          "template": "{{ if .Var.showAll }}{{ if .Var.showCustom }}{{ .Var.logotype }}@{{ .Var.computer }}{{ else }}{{ .UserName }}@{{ .HostName }}{{ end }} {{ end }}",
           "type": "session",
           "style": "diamond"
         },
