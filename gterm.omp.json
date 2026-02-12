@@ -64,6 +64,59 @@
           "foreground": "transparent",
           "background": "#f74c00",
           "template": " v{{.Full}}"
+        },
+        {
+          "type": "python",
+          "style": "plain",
+          "foreground": "transparent",
+          "background": "#3776ab",
+          "template": "Python v{{.Full}}",
+          "properties": {
+            "cache_duration": "none",
+            "fetch_virtual_env": true,
+            "virtual_env_icon": " \uf0e7 "
+          }
+        },
+        {
+          "type": "node",
+          "style": "plain",
+          "foreground": "transparent",
+          "background": "#68a063",
+          "template": "Node v{{.Full}}",
+          "properties": {
+            "cache_duration": "none"
+          }
+        },
+        {
+          "type": "java",
+          "style": "plain",
+          "foreground": "transparent",
+          "background": "#e8274b",
+          "template": "Java v{{.Full}}",
+          "properties": {
+            "cache_duration": "none"
+          }
+        },
+        {
+          "type": "php",
+          "style": "plain",
+          "foreground": "transparent",
+          "background": "#777bb4",
+          "template": "PHP v{{.Full}}",
+          "properties": {
+            "cache_duration": "none"
+          }
+        },
+        {
+          "type": "docker",
+          "style": "plain",
+          "foreground": "transparent",
+          "background": "#0db7ed",
+          "template": "Docker {{.Context}}",
+          "properties": {
+            "cache_duration": "none",
+            "fetch_context": true
+          }
         }
       ],
       "newline": true
