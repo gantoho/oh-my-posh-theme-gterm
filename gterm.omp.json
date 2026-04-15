@@ -217,7 +217,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": "!",
+          "template": "",
           "foreground": "#E06C75",
           "type": "root",
           "style": "plain"
